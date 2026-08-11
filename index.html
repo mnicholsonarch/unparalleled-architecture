@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Unparalleled Architecture is a healthcare architecture and planning practice helping organizations create better environments for patients, providers, and communities.">
+  <title>Unparalleled Architecture | Where Vision Becomes Direction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Unparalleled Architecture home">
+      <img src="images/logo.png" alt="Unparalleled Architecture logo">
+      <span class="brand-name">UNPARALLELED<br><small>ARCHITECTURE</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation">☰</button>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">HEALTHCARE ARCHITECTURE + PLANNING</p>
+        <h1>Where Vision<br>Becomes Direction.</h1>
+        <span class="rule"></span>
+        <p class="lead">Unparalleled Architecture is a healthcare architecture and planning practice helping organizations create better environments for patients, providers, and communities.</p>
+      </div>
+      <div class="hero-image image-placeholder" role="img" aria-label="Healthcare interior photography placeholder">
+        <div><span>YOUR PHOTOGRAPHY</span><small>Replace with project photography when ready.</small></div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="section-intro">
+        <p class="eyebrow">WHAT WE DO</p>
+        <h2>Strategic planning. Thoughtful design. Lasting impact.</h2>
+      </div>
+      <div class="service-grid">
+        <article><div class="service-number">01</div><h3>Healthcare Planning</h3><p>Strategic planning that connects organizational goals with the physical environment.</p></article>
+        <article><div class="service-number">02</div><h3>Service Line Planning</h3><p>Helping healthcare organizations evaluate, plan, and align individual service lines within the larger system.</p></article>
+        <article><div class="service-number">03</div><h3>Architecture &amp; Conceptual Design</h3><p>Transforming planning strategies into thoughtful, functional environments that support care delivery.</p></article>
+        <article><div class="service-number">04</div><h3>Program Management</h3><p>Providing clarity and direction through complex projects, from early planning through implementation.</p></article>
+      </div>
+    </section>
+
+    <section id="approach" class="approach">
+      <div class="approach-copy">
+        <p class="eyebrow">OUR APPROACH</p>
+        <h2>Clarity at every step.<br>Direction at every decision.</h2>
+        <span class="rule"></span>
+        <p>Healthcare environments are complex. Every decision—from strategy and programming to design and implementation—affects the people who use them.</p>
+        <p>We believe the best solutions begin with understanding the bigger picture. Unparalleled Architecture brings planning, architecture, and project experience together to help clients move from vision to clear direction and actionable solutions.</p>
+      </div>
+      <div class="vision-path">
+        <div class="path-step"><strong>VISION</strong><span>Understand the goal.</span></div>
+        <div class="arrow">→</div>
+        <div class="path-step"><strong>STRATEGY</strong><span>Define the path.</span></div>
+        <div class="arrow">→</div>
+        <div class="path-step"><strong>DIRECTION</strong><span>Move forward.</span></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about-image image-placeholder"><div><span>YOUR PROJECT PHOTO</span><small>Replace with your own photography later.</small></div></div>
+      <div class="about-copy">
+        <p class="eyebrow">ABOUT UNPARALLELED ARCHITECTURE</p>
+        <h2>Purpose-driven design.<br>People-centered outcomes.</h2>
+        <span class="rule"></span>
+        <p>Unparalleled Architecture was founded with a simple idea: healthcare design should be driven by purpose, not simply by process.</p>
+        <p>We work alongside healthcare organizations and project partners to understand their goals, navigate complexity, and develop solutions that support both the people delivering care and the communities they serve.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Have a project in mind?</h2>
+      <p>Let's start the conversation.</p>
+      <a class="email" href="mailto:info@unparalleledarchitecture.com">info@unparalleledarchitecture.com</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Unparalleled Architecture</span>
+    <span>Built on purpose. Designed for impact.</span>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => nav.classList.remove('open')));
+  </script>
+</body>
+</html>
