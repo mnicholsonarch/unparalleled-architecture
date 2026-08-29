@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340"><rect width="600" height="340" fill="#fafaf7"/>
+<g fill="none" stroke="#294a63" stroke-width="2"><circle cx="120" cy="120" r="48"/><circle cx="300" cy="85" r="48"/><circle cx="480" cy="120" r="48"/><circle cx="205" cy="250" r="48"/><circle cx="395" cy="250" r="48"/><path d="M165 105l90-18M345 87l90 18M150 155l20 55M450 155l-20 55M253 250h94"/></g>
+<g fill="none" stroke="#3a7fb6" stroke-width="3"><path d="M72 120h96M252 85h96M432 120h96M157 250h96M347 250h96"/></g>
+<g font-family="Arial" font-size="16" fill="#294a63" text-anchor="middle" letter-spacing="1.5"><text x="120" y="126">OWNER</text><text x="300" y="91">TEAM</text><text x="480" y="126">CODE</text><text x="205" y="256">COST</text><text x="395" y="256">RISK</text></g></svg>

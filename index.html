@@ -1,99 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Unparalleled Architecture is a healthcare architecture and planning practice helping organizations create better environments for patients, providers, and communities.">
-  <title>Unparalleled Architecture | Where Vision Becomes Direction</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Unparalleled Architecture — customer-driven architecture, planning, and advisory services for complex projects.">
+<title>Unparalleled Architecture | Vision. Strategy. Direction.</title>
+<style>
+:root{--navy:#0e2d4f;--blue:#155fba;--blue2:#3a7fb6;--ink:#182b3b;--muted:#5d6973;--paper:#fafaf7;--line:#d8e0e5;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55;background:#fff}a{text-decoration:none;color:inherit}img{display:block}.container{width:min(calc(100% - 48px),var(--max));margin:auto}.eyebrow{font-size:.72rem;letter-spacing:.18em;font-weight:700;color:var(--blue);text-transform:uppercase}h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.08;margin:0}.accent{width:52px;height:3px;background:var(--blue);margin:22px 0}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);border-bottom:1px solid #e8edef}.nav{height:86px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px}.logo{width:270px;height:68px;object-fit:contain;object-position:left center}.navlinks{display:flex;gap:28px;font-size:10px;letter-spacing:.14em;font-weight:700}.navlinks a:hover{color:var(--blue)}
+.hero{display:grid;grid-template-columns:42% 58%;min-height:530px;background:var(--paper)}.hero-copy{display:flex;align-items:center;padding:65px 35px 65px max(24px,calc((100vw - var(--max))/2))}.hero h1{font-size:clamp(3rem,5vw,4.8rem);letter-spacing:-.035em}.hero h1 span{color:var(--blue)}.hero p{font-size:.98rem;color:var(--muted);max-width:520px;margin:0}.hero-art{min-height:530px;background:url("images/hero-sketch.svg") center/cover no-repeat}
+.services{padding:82px 0;background:#fff}.service-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.service{padding:24px 26px 30px}.service+.service{border-left:1px solid var(--line)}.service-img{height:150px;margin:-24px -26px 22px;background:var(--paper)}.service-img img{width:100%;height:100%;object-fit:cover}.service h3{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);margin:0 0 12px}.service ul{padding-left:17px;margin:0;color:var(--muted);font-size:.86rem}
+.approach{padding:72px 0;background:var(--paper)}.approach-head{display:grid;grid-template-columns:28% 72%;gap:35px;align-items:center}.approach-head h2{font-size:clamp(2rem,3.4vw,3.1rem)}.approach-steps{display:grid;grid-template-columns:1fr 60px 1fr 60px 1fr;align-items:center}.step{text-align:center}.step img{width:100%;height:135px;object-fit:contain}.step h3{font-size:.74rem;letter-spacing:.16em;color:var(--blue);margin:5px 0}.step p{font-size:.76rem;color:var(--muted);margin:0}.arrow{height:1px;background:#7a95aa;position:relative}.arrow:after{content:"";position:absolute;right:0;top:-4px;width:8px;height:8px;border-top:1px solid #7a95aa;border-right:1px solid #7a95aa;transform:rotate(45deg)}
+.health{padding:76px 0;background:#fff}.health-grid{display:grid;grid-template-columns:28% 72%;gap:28px}.health h2{font-size:clamp(2.2rem,3.4vw,3.2rem)}.health p{font-size:.86rem;color:var(--muted)}.health-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.health-card{border-top:2px solid var(--blue);background:var(--paper)}.health-card img{width:100%;height:145px;object-fit:contain;padding:8px;background:var(--paper)}.health-card h3{font-size:.72rem;letter-spacing:.08em;color:var(--blue);margin:11px 12px 5px}.health-card p{font-size:.72rem;margin:0 12px 14px;color:var(--muted)}.disclaimer{font-size:.62rem!important;color:#7c8992!important;margin-top:10px!important}
+.credentials{padding:72px 0;background:#fff}.cred-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0}.cred-col{padding:0 30px}.cred-col:first-child{padding-left:0}.cred-col+.cred-col{border-left:1px solid var(--line)}.cred-col h2{font-size:clamp(2rem,3vw,2.8rem)}.cred-col p{font-size:.84rem;color:var(--muted)}.quote{padding:18px 0;border-top:1px solid var(--line)}.quote p{font-family:Georgia,"Times New Roman",serif;font-size:.9rem;color:var(--ink);margin:0 0 8px}.quote span{font-size:.65rem;color:var(--muted);letter-spacing:.08em}.about-copy h2{font-size:clamp(2rem,3vw,2.8rem)}
+.contact{background:var(--navy);color:#fff;padding:55px 0}.contact-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.contact h2{font-size:clamp(2rem,3.4vw,3rem)}.email{font-size:.95rem;border-bottom:1px solid #7690a4;padding-bottom:5px}.contact-actions{display:flex;align-items:center;gap:28px}.calendar-booking{min-width:190px}.contact .eyebrow{color:#83bde6}footer{padding:20px 0;font-size:.65rem;color:#6b7882}.footer-inner{display:flex;justify-content:space-between}
+@media(max-width:900px){.navlinks{gap:15px}.hero,.health-grid{grid-template-columns:1fr}.hero-art{min-height:360px}.service-grid{grid-template-columns:1fr}.service+.service{border-left:0;border-top:1px solid var(--line)}.approach-head{grid-template-columns:1fr}.approach-steps{margin-top:25px}.credentials{padding:55px 0}.cred-grid{grid-template-columns:1fr;gap:40px}.cred-col{padding:0}.cred-col+.cred-col{border-left:0;border-top:1px solid var(--line);padding-top:35px}.health-cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.nav{height:72px}.logo{width:225px;height:58px}.navlinks{display:none}.container{width:min(calc(100% - 34px),var(--max))}.hero h1{font-size:3rem}.hero-copy{padding:60px 17px}.health-cards{grid-template-columns:1fr}.approach-steps{grid-template-columns:1fr}.arrow{display:none}.step{margin-bottom:25px}.contact-inner,.footer-inner{flex-direction:column;align-items:flex-start}.contact-actions{flex-direction:column;align-items:flex-start;gap:20px}}
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Unparalleled Architecture home">
-      <img src="images/logo.png" alt="Unparalleled Architecture logo">
-      <span class="brand-name">UNPARALLELED<br><small>ARCHITECTURE</small></span>
-    </a>
-    <button class="menu-toggle" aria-label="Open navigation">☰</button>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#approach">Approach</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header><div class="container nav">
+<a class="brand" href="#top" aria-label="Unparalleled Architecture home"><img class="logo" src="images/ua-logo.png" alt="Unparalleled Architecture"></a>
+<nav class="navlinks"><a href="#services">SERVICES</a><a href="#approach">APPROACH</a><a href="#healthcare">HEALTHCARE EXPERTISE</a><a href="#experience">EXPERIENCE</a><a href="#contact">CONTACT</a></nav>
+</div></header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">HEALTHCARE ARCHITECTURE + PLANNING</p>
-        <h1>Where Vision<br>Becomes Direction.</h1>
-        <span class="rule"></span>
-        <p class="lead">Unparalleled Architecture is a healthcare architecture and planning practice helping organizations create better environments for patients, providers, and communities.</p>
-      </div>
-      <div class="hero-image image-placeholder" role="img" aria-label="Healthcare interior photography placeholder">
-        <div><span>YOUR PHOTOGRAPHY</span><small>Replace with project photography when ready.</small></div>
-      </div>
-    </section>
+<main id="top">
+<section class="hero">
+<div class="hero-copy"><div><div class="eyebrow">Vision. Strategy. Direction.</div><h1>We turn complexity into <span>clarity.</span></h1><div class="accent"></div><p>Unparalleled Architecture is a customer-driven architecture, planning, and advisory firm built on more than 20 years of experience and a desire to be a true partner to its clients.</p><p style="margin-top:12px">We solve complex and unique problems with creative solutions designed with your needs, user experience, and cost efficiency in mind. The more complex the challenge, the more we're drawn to it.</p></div></div>
+<div class="hero-art" role="img" aria-label="Conceptual architectural sketch"></div>
+</section>
 
-    <section id="services" class="section services">
-      <div class="section-intro">
-        <p class="eyebrow">WHAT WE DO</p>
-        <h2>Strategic planning. Thoughtful design. Lasting impact.</h2>
-      </div>
-      <div class="service-grid">
-        <article><div class="service-number">01</div><h3>Healthcare Planning</h3><p>Strategic planning that connects organizational goals with the physical environment.</p></article>
-        <article><div class="service-number">02</div><h3>Service Line Planning</h3><p>Helping healthcare organizations evaluate, plan, and align individual service lines within the larger system.</p></article>
-        <article><div class="service-number">03</div><h3>Architecture &amp; Conceptual Design</h3><p>Transforming planning strategies into thoughtful, functional environments that support care delivery.</p></article>
-        <article><div class="service-number">04</div><h3>Program Management</h3><p>Providing clarity and direction through complex projects, from early planning through implementation.</p></article>
-      </div>
-    </section>
+<section class="services" id="services"><div class="container">
+<div style="margin-bottom:34px"><div class="eyebrow">What We Do</div><h2 style="font-size:clamp(2.1rem,3.4vw,3.1rem);margin-top:10px">Expertise at every stage of the process.</h2></div>
+<div class="service-grid">
+<article class="service"><div class="service-img"><img src="images/planning-sketch.svg" alt="Architectural planning sketch"></div><h3>Planning</h3><ul><li>Site Analysis</li><li>Programming</li><li>Feasibility Studies</li></ul></article>
+<article class="service"><div class="service-img"><img src="images/design-sketch.svg" alt="Architectural design sketch"></div><h3>Design</h3><ul><li>Architectural Services</li><li>Creative solutions shaped around your goals, users, and budget</li></ul></article>
+<article class="service"><div class="service-img"><img src="images/advisory-sketch.svg" alt="Project advisory sketch"></div><h3>Advisory</h3><ul><li>Program Management</li><li>Design Review (IBC, LSC, FGI, CMS, &amp; DCH)</li><li>Life Safety Compliance Reviews</li></ul></article>
+</div></div></section>
 
-    <section id="approach" class="approach">
-      <div class="approach-copy">
-        <p class="eyebrow">OUR APPROACH</p>
-        <h2>Clarity at every step.<br>Direction at every decision.</h2>
-        <span class="rule"></span>
-        <p>Healthcare environments are complex. Every decision—from strategy and programming to design and implementation—affects the people who use them.</p>
-        <p>We believe the best solutions begin with understanding the bigger picture. Unparalleled Architecture brings planning, architecture, and project experience together to help clients move from vision to clear direction and actionable solutions.</p>
-      </div>
-      <div class="vision-path">
-        <div class="path-step"><strong>VISION</strong><span>Understand the goal.</span></div>
-        <div class="arrow">→</div>
-        <div class="path-step"><strong>STRATEGY</strong><span>Define the path.</span></div>
-        <div class="arrow">→</div>
-        <div class="path-step"><strong>DIRECTION</strong><span>Move forward.</span></div>
-      </div>
-    </section>
+<section class="approach" id="approach"><div class="container">
+<div class="approach-head"><div><div class="eyebrow">Our Approach</div><h2>Clarity at every step. Direction at every decision.</h2><div class="accent"></div></div>
+<div class="approach-steps">
+<div class="step"><img src="images/approach-vision.svg" alt=""><h3>VISION</h3><p>Understand the big picture.</p></div><div class="arrow"></div>
+<div class="step"><img src="images/approach-strategy.svg" alt=""><h3>STRATEGY</h3><p>Develop the right plan and approach.</p></div><div class="arrow"></div>
+<div class="step"><img src="images/approach-direction.svg" alt=""><h3>DIRECTION</h3><p>Deliver solutions that bring your vision to life.</p></div>
+</div></div></div></section>
 
-    <section id="about" class="section about">
-      <div class="about-image image-placeholder"><div><span>YOUR PROJECT PHOTO</span><small>Replace with your own photography later.</small></div></div>
-      <div class="about-copy">
-        <p class="eyebrow">ABOUT UNPARALLELED ARCHITECTURE</p>
-        <h2>Purpose-driven design.<br>People-centered outcomes.</h2>
-        <span class="rule"></span>
-        <p>Unparalleled Architecture was founded with a simple idea: healthcare design should be driven by purpose, not simply by process.</p>
-        <p>We work alongside healthcare organizations and project partners to understand their goals, navigate complexity, and develop solutions that support both the people delivering care and the communities they serve.</p>
-      </div>
-    </section>
+<section class="health" id="healthcare"><div class="container health-grid">
+<div><div class="eyebrow">Healthcare Expertise</div><h2>Experience where complexity matters.</h2><div class="accent"></div><p>Healthcare is a core area of expertise, not the limit of what we do. Our experience includes the operational, regulatory, technical, and human complexities that shape successful healthcare environments.</p><p>Representative areas of experience include hospital expansion, imaging and diagnostic services, ground-up facilities, specialized clinical environments, programming and feasibility, and code and life safety review.</p><p class="disclaimer">Sketch studies are conceptual illustrations of the service lines and expertise described here.</p></div>
+<div class="health-cards">
+<article class="health-card"><img src="images/hospital-expansion.svg" alt="Representative hospital expansion experience"><h3>HOSPITAL EXPANSION</h3><p>Supporting additions and vertical expansions that maintain operations and integrate new spaces.</p></article>
+<article class="health-card"><img src="images/imaging-diagnostics.svg" alt="Representative imaging services experience"><h3>IMAGING &amp; DIAGNOSTIC SERVICES</h3><p>Planning for imaging, interventional, and diagnostic environments with a focus on workflow and technology.</p></article>
+<article class="health-card"><img src="images/ground-up-facilities.svg" alt="Representative ground-up healthcare facility experience"><h3>GROUND-UP FACILITIES</h3><p>Supporting new facilities from early planning and programming through design and delivery.</p></article>
+<article class="health-card"><img src="images/specialized-clinical.svg" alt="Representative specialized clinical environment experience"><h3>SPECIALIZED CLINICAL ENVIRONMENTS</h3><p>Operating rooms, labor and delivery, ICUs, pharmacies, and other high-acuity spaces.</p></article>
+<article class="health-card"><img src="images/programming-feasibility.svg" alt="Representative programming and feasibility experience"><h3>PROGRAMMING &amp; FEASIBILITY</h3><p>Assessing needs, defining programs, evaluating opportunities, and developing the case for smart decisions.</p></article>
+<article class="health-card"><img src="images/life-safety.svg" alt="Representative code and life safety review experience"><h3>CODE &amp; LIFE SAFETY</h3><p>Reviews and analysis for IBC, LSC, FGI, CMS, and Georgia DCH requirements.</p></article>
+</div></div></section>
 
-    <section id="contact" class="contact">
-      <p class="eyebrow">LET'S CONNECT</p>
-      <h2>Have a project in mind?</h2>
-      <p>Let's start the conversation.</p>
-      <a class="email" href="mailto:info@unparalleledarchitecture.com">info@unparalleledarchitecture.com</a>
-    </section>
-  </main>
+<section class="credentials" id="experience"><div class="container"><div class="cred-grid">
+<div class="cred-col"><div class="eyebrow">Experience &amp; Credentials</div><h2>Over 20 years of experience. Focused on what matters.</h2><div class="accent"></div><p>With more than 20 years of experience spanning planning, architectural design, and project management, Unparalleled Architecture brings a practical understanding of how to navigate complex projects in critical environments.</p><p>Matt Nicholson leads the firm and holds architectural licenses in Georgia and California, with Board Certification through the American College of Healthcare Architects (ACHA).</p><p>Experience working for both small and large firms has provided hands-on project experience alongside an understanding of larger-firm processes and standards.</p><p>Unparalleled Architecture is ready to tackle complex projects from planning through construction.</p></div>
+<div class="cred-col"><div class="eyebrow">What Clients Are Saying</div><h2>Trust is part of the work.</h2><div class="accent"></div>
+<div class="quote"><p>“He is a trusted advisor who consistently places the best interests of his clients first.”</p><span>— Sepi Browning</span></div>
+<div class="quote"><p>“Matthew remained composed and resourceful in finding solutions that ensured the project's success while maintaining the design integrity.”</p><span>— Laurie Hansen</span></div>
+<div class="quote"><p>“His effective communication skills and ability to mediate differing viewpoints contribute significantly to the successful outcomes of projects.”</p><span>— Anindita Mukherjee</span></div>
+<p class="disclaimer">Quotes from client recommendations. Names are shown without former titles.</p></div>
+<div class="cred-col about-copy"><div class="eyebrow">About Unparalleled Architecture</div><h2>Built on partnership. Driven by purpose.</h2><div class="accent"></div><p>We believe the best solutions begin with understanding people, goals, and constraints.</p><p>Our role is to listen, ask the right questions, and bring clarity to complex decisions.</p><p>We are not interested in cookie-cutter solutions. Every problem deserves a unique and distinct solution.</p><p>We are your partner—bringing expertise, creativity, and practical solutions to life.</p></div>
+</div></div></section>
 
-  <footer>
-    <span>© 2026 Unparalleled Architecture</span>
-    <span>Built on purpose. Designed for impact.</span>
-  </footer>
-
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav');
-    toggle.addEventListener('click', () => nav.classList.toggle('open'));
-    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => nav.classList.remove('open')));
-  </script>
-</body>
-</html>
+<section class="contact" id="contact">
+<div class="container contact-inner">
+  <div>
+    <div class="eyebrow">Let's Start the Conversation</div>
+    <h2>Have a project in mind?</h2>
+  </div>
+  <div class="contact-actions">
+    <a class="email" href="mailto:info@unparalleledarchitecture.com">info@unparalleledarchitecture.com</a>
+    <div class="calendar-booking">
+      <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+      <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+      <script>
+      (function() {
+        var target = document.currentScript;
+        window.addEventListener('load', function() {
+          calendar.schedulingButton.load({
+            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ00ffrGEIAgGTgYdlcbuwQj7GG4uHN1x43ekjlHGNLfi2Eh1rU50Nm0a4lPWKjiRP5aIcZr1S0Y?gv=true',
+            color: '#039BE5',
+            label: 'Book an appointment',
+            target,
+          });
+        });
+      })();
+      </script>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+<footer><div class="container footer-inner"><span>© 2026 Unparalleled Architecture</span><span>Vision. Strategy. Direction.</span></div></footer>
+</body></html>
