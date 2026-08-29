@@ -1,33 +1,28 @@
-UNPARALLELED ARCHITECTURE — FINAL GITHUB PACKAGE
+UNPARALLELED ARCHITECTURE — FINAL PNG WEBSITE
 
-Approved sketch-based version. Actual project photography has been removed for now and replaced with architectural sketch illustrations.
+This version uses PNG image assets with explicit relative paths from index.html.
+Do not rename the image files.
 
-WHAT TO REPLACE IN GITHUB
-1. Replace your existing index.html with this package's index.html.
-2. Replace the contents of your existing images folder with this package's images folder.
-3. Delete the old JPG portfolio images if they are still in the repository; this version does not use them.
-4. Keep ua-logo.png — this is the exact logo image you supplied and is used only at the top of the site.
-
-FINAL FILE STRUCTURE
+GitHub structure:
 index.html
 images/
   ua-logo.png
-  hero-sketch.svg
-  planning-sketch.svg
-  design-sketch.svg
-  advisory-sketch.svg
-  approach-vision.svg
-  approach-strategy.svg
-  approach-direction.svg
-  hospital-expansion.svg
-  imaging-diagnostics.svg
-  ground-up-facilities.svg
-  specialized-clinical.svg
-  programming-feasibility.svg
-  life-safety.svg
+  hero-sketch.png
+  planning-sketch.png
+  design-sketch.png
+  advisory-sketch.png
+  approach-vision.png
+  approach-strategy.png
+  approach-direction.png
+  hospital-expansion.png
+  imaging-diagnostics.png
+  ground-up-facilities.png
+  specialized-clinical.png
+  programming-feasibility.png
+  life-safety.png
+  about-bg.png
 
-No external image URLs are required.
+The Google Calendar appointment scheduling button is embedded in index.html.
+No additional Calendar files are needed.
 
-
-GOOGLE CALENDAR BOOKING
-The Contact section includes the supplied Google Calendar appointment scheduling button next to the info email. No additional GitHub files are required for the calendar button.
+For an existing repository, replace index.html and replace the contents of the images folder with these files. Keep ua-logo.png as the supplied logo.

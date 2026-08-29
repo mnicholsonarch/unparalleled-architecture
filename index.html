@@ -1,80 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Unparalleled Architecture — customer-driven architecture, planning, and advisory services for complex projects.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Unparalleled Architecture — customer-driven architecture, planning, and advisory services for complex projects, with deep healthcare expertise.">
 <title>Unparalleled Architecture | Vision. Strategy. Direction.</title>
 <style>
-:root{--navy:#0e2d4f;--blue:#155fba;--blue2:#3a7fb6;--ink:#182b3b;--muted:#5d6973;--paper:#fafaf7;--line:#d8e0e5;--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55;background:#fff}a{text-decoration:none;color:inherit}img{display:block}.container{width:min(calc(100% - 48px),var(--max));margin:auto}.eyebrow{font-size:.72rem;letter-spacing:.18em;font-weight:700;color:var(--blue);text-transform:uppercase}h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.08;margin:0}.accent{width:52px;height:3px;background:var(--blue);margin:22px 0}
-header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);border-bottom:1px solid #e8edef}.nav{height:86px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px}.logo{width:270px;height:68px;object-fit:contain;object-position:left center}.navlinks{display:flex;gap:28px;font-size:10px;letter-spacing:.14em;font-weight:700}.navlinks a:hover{color:var(--blue)}
-.hero{display:grid;grid-template-columns:42% 58%;min-height:530px;background:var(--paper)}.hero-copy{display:flex;align-items:center;padding:65px 35px 65px max(24px,calc((100vw - var(--max))/2))}.hero h1{font-size:clamp(3rem,5vw,4.8rem);letter-spacing:-.035em}.hero h1 span{color:var(--blue)}.hero p{font-size:.98rem;color:var(--muted);max-width:520px;margin:0}.hero-art{min-height:530px;background:url("images/hero-sketch.svg") center/cover no-repeat}
-.services{padding:82px 0;background:#fff}.service-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.service{padding:24px 26px 30px}.service+.service{border-left:1px solid var(--line)}.service-img{height:150px;margin:-24px -26px 22px;background:var(--paper)}.service-img img{width:100%;height:100%;object-fit:cover}.service h3{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);margin:0 0 12px}.service ul{padding-left:17px;margin:0;color:var(--muted);font-size:.86rem}
-.approach{padding:72px 0;background:var(--paper)}.approach-head{display:grid;grid-template-columns:28% 72%;gap:35px;align-items:center}.approach-head h2{font-size:clamp(2rem,3.4vw,3.1rem)}.approach-steps{display:grid;grid-template-columns:1fr 60px 1fr 60px 1fr;align-items:center}.step{text-align:center}.step img{width:100%;height:135px;object-fit:contain}.step h3{font-size:.74rem;letter-spacing:.16em;color:var(--blue);margin:5px 0}.step p{font-size:.76rem;color:var(--muted);margin:0}.arrow{height:1px;background:#7a95aa;position:relative}.arrow:after{content:"";position:absolute;right:0;top:-4px;width:8px;height:8px;border-top:1px solid #7a95aa;border-right:1px solid #7a95aa;transform:rotate(45deg)}
-.health{padding:76px 0;background:#fff}.health-grid{display:grid;grid-template-columns:28% 72%;gap:28px}.health h2{font-size:clamp(2.2rem,3.4vw,3.2rem)}.health p{font-size:.86rem;color:var(--muted)}.health-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.health-card{border-top:2px solid var(--blue);background:var(--paper)}.health-card img{width:100%;height:145px;object-fit:contain;padding:8px;background:var(--paper)}.health-card h3{font-size:.72rem;letter-spacing:.08em;color:var(--blue);margin:11px 12px 5px}.health-card p{font-size:.72rem;margin:0 12px 14px;color:var(--muted)}.disclaimer{font-size:.62rem!important;color:#7c8992!important;margin-top:10px!important}
-.credentials{padding:72px 0;background:#fff}.cred-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0}.cred-col{padding:0 30px}.cred-col:first-child{padding-left:0}.cred-col+.cred-col{border-left:1px solid var(--line)}.cred-col h2{font-size:clamp(2rem,3vw,2.8rem)}.cred-col p{font-size:.84rem;color:var(--muted)}.quote{padding:18px 0;border-top:1px solid var(--line)}.quote p{font-family:Georgia,"Times New Roman",serif;font-size:.9rem;color:var(--ink);margin:0 0 8px}.quote span{font-size:.65rem;color:var(--muted);letter-spacing:.08em}.about-copy h2{font-size:clamp(2rem,3vw,2.8rem)}
-.contact{background:var(--navy);color:#fff;padding:55px 0}.contact-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.contact h2{font-size:clamp(2rem,3.4vw,3rem)}.email{font-size:.95rem;border-bottom:1px solid #7690a4;padding-bottom:5px}.contact-actions{display:flex;align-items:center;gap:28px}.calendar-booking{min-width:190px}.contact .eyebrow{color:#83bde6}footer{padding:20px 0;font-size:.65rem;color:#6b7882}.footer-inner{display:flex;justify-content:space-between}
-@media(max-width:900px){.navlinks{gap:15px}.hero,.health-grid{grid-template-columns:1fr}.hero-art{min-height:360px}.service-grid{grid-template-columns:1fr}.service+.service{border-left:0;border-top:1px solid var(--line)}.approach-head{grid-template-columns:1fr}.approach-steps{margin-top:25px}.credentials{padding:55px 0}.cred-grid{grid-template-columns:1fr;gap:40px}.cred-col{padding:0}.cred-col+.cred-col{border-left:0;border-top:1px solid var(--line);padding-top:35px}.health-cards{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:620px){.nav{height:72px}.logo{width:225px;height:58px}.navlinks{display:none}.container{width:min(calc(100% - 34px),var(--max))}.hero h1{font-size:3rem}.hero-copy{padding:60px 17px}.health-cards{grid-template-columns:1fr}.approach-steps{grid-template-columns:1fr}.arrow{display:none}.step{margin-bottom:25px}.contact-inner,.footer-inner{flex-direction:column;align-items:flex-start}.contact-actions{flex-direction:column;align-items:flex-start;gap:20px}}
+:root{--navy:#08254a;--blue:#075bc9;--ink:#102846;--muted:#4f647b;--line:#d9e1e8;--paper:#fafaf8;--max:1500px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55;background:#fff}a{color:inherit;text-decoration:none}.container{width:min(calc(100% - 64px),var(--max));margin:auto}.eyebrow{font-size:13px;line-height:1.2;letter-spacing:.16em;font-weight:700;color:var(--blue);text-transform:uppercase}h1,h2,h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-weight:400}h1{font-size:clamp(3rem,4.8vw,5.2rem);line-height:1.02;letter-spacing:-.035em}h2{font-size:clamp(2.25rem,3.5vw,3.8rem);line-height:1.05;letter-spacing:-.025em}.accent{width:52px;height:3px;background:var(--blue);margin:26px 0}
+
+header{height:86px;border-bottom:1px solid #e3e8ec;background:rgba(255,255,255,.98);position:sticky;top:0;z-index:20}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:14px}.mark{width:74px;height:64px;object-fit:contain}.brand-wordmark{line-height:1}.brand-wordmark strong{display:block;font-size:25px;letter-spacing:.02em;font-weight:700;color:#08244a}.brand-wordmark span{display:block;font-size:12px;letter-spacing:.38em;color:var(--blue);margin-top:5px}.navlinks{display:flex;gap:38px;align-items:center;font-size:12px;font-weight:700}.navlinks a{padding:31px 0 27px;border-bottom:2px solid transparent}.navlinks a:hover,.navlinks a.active{border-color:var(--blue)}
+
+.hero{display:grid;grid-template-columns:40% 60%;min-height:470px;border-bottom:1px solid var(--line);overflow:hidden}.hero-copy{padding:55px 42px 48px max(32px,calc((100vw - var(--max))/2));display:flex;align-items:center}.hero-copy p{max-width:430px;font-size:14px;color:var(--ink);margin:0 0 8px}.hero-art{min-height:470px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}.hero-art img{width:100%;height:100%;object-fit:cover;object-position:center}
+
+.services{border-bottom:1px solid var(--line)}.service-grid{display:grid;grid-template-columns:24% 25.33% 25.33% 25.33%;min-height:255px}.service-intro{padding:38px 32px;border-right:1px solid var(--line)}.service-intro h2{font-size:29px;margin-top:13px;max-width:270px}.service{padding:0 26px 26px;border-right:1px solid var(--line)}.service:last-child{border-right:0}.service-img{height:118px;margin:0 -26px 20px;overflow:hidden}.service-img img{width:100%;height:100%;object-fit:cover}.service h3{font-family:Arial,Helvetica,sans-serif;font-size:14px;color:var(--blue);letter-spacing:.08em;font-weight:700;text-transform:uppercase}.service ul{margin:12px 0 0;padding-left:18px;font-size:13px}.service li{margin:4px 0}
+
+.approach{border-bottom:1px solid var(--line)}.approach-grid{display:grid;grid-template-columns:24% 76%;min-height:215px}.approach-intro{padding:35px 32px;border-right:1px solid var(--line)}.approach-intro h2{font-size:27px;margin-top:13px}.steps{display:grid;grid-template-columns:1fr 42px 1fr 42px 1fr;align-items:center;padding:20px 30px}.step{text-align:center}.step img{width:100%;height:112px;object-fit:cover}.step h3{font-family:Arial,Helvetica,sans-serif;font-size:13px;color:var(--blue);font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-top:6px}.step p{font-size:12px;margin:5px auto 0;max-width:150px}.arrow{font-size:31px;color:var(--blue);text-align:center}
+
+.health{border-bottom:1px solid var(--line)}.health-grid{display:grid;grid-template-columns:24% 76%}.health-intro{padding:34px 28px 30px 32px;border-right:1px solid var(--line)}.health-intro h2{font-size:28px;margin-top:12px}.health-intro p{font-size:12px;color:var(--muted);margin:18px 0 0}.health-intro .small{font-size:9px;font-style:italic;margin-top:17px}.health-cards{display:grid;grid-template-columns:repeat(6,1fr)}.health-card{padding:0 12px 22px;border-right:1px solid var(--line)}.health-card:last-child{border-right:0}.health-card img{display:block;width:100%;height:132px;object-fit:cover;margin-bottom:13px}.health-card h3{font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.25;color:var(--blue);font-weight:700;text-transform:uppercase}.health-card p{font-size:11px;line-height:1.5;margin:9px 0 0;color:#243c56}
+
+.lower{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid var(--line)}.lower>section{padding:35px 32px;border-right:1px solid var(--line)}.lower>section:last-child{border-right:0}.lower h2{font-size:27px;margin-top:11px}.lower p{font-size:12px;color:#243c56;margin:13px 0}.credential-box{margin-top:18px;border:1px solid #b9c6d0;padding:9px 12px;display:flex;gap:12px;align-items:center}.credential-box strong{font-family:Georgia,"Times New Roman",serif;font-size:25px;color:var(--blue)}.credential-box span{font-size:9px;line-height:1.35;color:#4f647b}.quote{padding:0 0 14px;margin:14px 0;border-bottom:1px solid var(--line);position:relative;padding-left:34px}.quote:last-child{border-bottom:0}.quote:before{content:"“";position:absolute;left:0;top:-9px;font-family:Georgia,serif;font-size:46px;color:var(--blue);font-weight:700}.quote p{margin:0;font-size:12px;line-height:1.5}.quote cite{display:block;font-style:normal;font-size:11px;margin-top:6px}.quote-note{font-size:10px!important;font-style:italic;color:#52697f!important}.about-panel{min-height:365px;position:relative;overflow:hidden}.about-panel .copy{position:relative;z-index:2;max-width:440px}.about-art{position:absolute;right:-30px;bottom:-10px;width:68%;height:78%;object-fit:cover;object-position:center;opacity:.9}
+
+.contact{background:#061f3f;color:#fff;padding:26px 0}.contact-inner{display:flex;align-items:center;gap:30px}.mail-icon{width:54px;height:42px;border:1px solid #fff;position:relative;flex:0 0 auto}.mail-icon:before,.mail-icon:after{content:"";position:absolute;top:8px;width:34px;height:1px;background:#fff}.mail-icon:before{left:0;transform:rotate(33deg)}.mail-icon:after{right:0;transform:rotate(-33deg)}.contact-title{font-family:Georgia,"Times New Roman",serif;font-size:28px;line-height:1.05}.contact-sub{font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-top:4px}.divider{height:48px;width:1px;background:#60748c;margin-left:12px}.email{font-size:13px}.calendar-booking{margin-left:auto}.calendar-booking a{font-family:Arial,Helvetica,sans-serif!important}footer{padding:15px 0;font-size:10px;color:#647487}.footer{display:flex;justify-content:space-between}
+
+@media(max-width:1050px){.navlinks{gap:18px}.service-grid,.approach-grid,.health-grid{grid-template-columns:1fr}.service-intro,.approach-intro,.health-intro{border-right:0;border-bottom:1px solid var(--line)}.service-grid{grid-template-columns:repeat(3,1fr)}.service-intro{grid-column:1/-1}.health-cards{grid-template-columns:repeat(3,1fr)}.health-card:nth-child(3){border-right:0}.lower{grid-template-columns:1fr}.lower>section{border-right:0;border-bottom:1px solid var(--line)}.lower>section:last-child{border-bottom:0}.about-art{width:50%}}
+@media(max-width:760px){.container{width:min(calc(100% - 36px),var(--max))}.navlinks{display:none}.brand-wordmark strong{font-size:20px}.brand-wordmark span{font-size:9px}.hero{grid-template-columns:1fr}.hero-copy{padding:48px 18px}.hero-art{min-height:320px}.service-grid,.health-cards{grid-template-columns:1fr}.service-intro{grid-column:auto}.service{border-right:0;border-bottom:1px solid var(--line);padding-bottom:26px}.steps{grid-template-columns:1fr;padding:20px}.arrow{transform:rotate(90deg);margin:3px 0}.health-card{border-right:0;border-bottom:1px solid var(--line);padding:0 0 22px;margin-bottom:18px}.lower>section{padding:30px 0}.about-art{width:70%;opacity:.5}.contact-inner{flex-wrap:wrap}.divider{display:none}.calendar-booking{margin-left:0}.footer{flex-direction:column;gap:5px}}
 </style>
 </head>
 <body>
-<header><div class="container nav">
-<a class="brand" href="#top" aria-label="Unparalleled Architecture home"><img class="logo" src="images/ua-logo.png" alt="Unparalleled Architecture"></a>
-<nav class="navlinks"><a href="#services">SERVICES</a><a href="#approach">APPROACH</a><a href="#healthcare">HEALTHCARE EXPERTISE</a><a href="#experience">EXPERIENCE</a><a href="#contact">CONTACT</a></nav>
-</div></header>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Unparalleled Architecture home">
+      <img class="mark" src="images/ua-logo.png" alt="UA logo">
+      <span class="brand-wordmark"><strong>UNPARALLELED</strong><span>ARCHITECTURE</span></span>
+    </a>
+    <nav class="navlinks">
+      <a class="active" href="#top">HOME</a>
+      <a href="#services">SERVICES</a>
+      <a href="#healthcare">HEALTHCARE EXPERTISE</a>
+      <a href="#about">ABOUT</a>
+      <a href="#approach">APPROACH</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </div>
+</header>
 
 <main id="top">
 <section class="hero">
-<div class="hero-copy"><div><div class="eyebrow">Vision. Strategy. Direction.</div><h1>We turn complexity into <span>clarity.</span></h1><div class="accent"></div><p>Unparalleled Architecture is a customer-driven architecture, planning, and advisory firm built on more than 20 years of experience and a desire to be a true partner to its clients.</p><p style="margin-top:12px">We solve complex and unique problems with creative solutions designed with your needs, user experience, and cost efficiency in mind. The more complex the challenge, the more we're drawn to it.</p></div></div>
-<div class="hero-art" role="img" aria-label="Conceptual architectural sketch"></div>
+  <div class="hero-copy">
+    <div>
+      <div class="eyebrow">Vision. Strategy. Direction.</div>
+      <h1>We turn complexity into <span style="color:var(--blue)">clarity.</span></h1>
+      <div class="accent"></div>
+      <p>Unparalleled Architecture is an architecture, planning, and advisory firm built on years of customer-centric experience and the desire to be a true partner to our clients.</p>
+      <p>We solve complex and unique problems with creative solutions designed with your needs, user experience, and cost efficiency in mind.</p>
+      <p>The more complex the challenge, the more we're drawn to it.</p>
+    </div>
+  </div>
+  <div class="hero-art"><img src="images/hero-sketch.png" alt="Conceptual architectural building sketch"></div>
 </section>
 
-<section class="services" id="services"><div class="container">
-<div style="margin-bottom:34px"><div class="eyebrow">What We Do</div><h2 style="font-size:clamp(2.1rem,3.4vw,3.1rem);margin-top:10px">Expertise at every stage of the process.</h2></div>
-<div class="service-grid">
-<article class="service"><div class="service-img"><img src="images/planning-sketch.svg" alt="Architectural planning sketch"></div><h3>Planning</h3><ul><li>Site Analysis</li><li>Programming</li><li>Feasibility Studies</li></ul></article>
-<article class="service"><div class="service-img"><img src="images/design-sketch.svg" alt="Architectural design sketch"></div><h3>Design</h3><ul><li>Architectural Services</li><li>Creative solutions shaped around your goals, users, and budget</li></ul></article>
-<article class="service"><div class="service-img"><img src="images/advisory-sketch.svg" alt="Project advisory sketch"></div><h3>Advisory</h3><ul><li>Program Management</li><li>Design Review (IBC, LSC, FGI, CMS, &amp; DCH)</li><li>Life Safety Compliance Reviews</li></ul></article>
-</div></div></section>
+<section class="services" id="services">
+  <div class="service-grid">
+    <div class="service-intro"><div class="eyebrow">What We Do</div><h2>Expertise at every stage of the process.</h2><div class="accent"></div></div>
+    <article class="service"><div class="service-img"><img src="images/planning-sketch.png" alt="Architectural planning sketch"></div><h3>Planning</h3><ul><li>Site Analysis</li><li>Programming</li><li>Feasibility Studies</li></ul></article>
+    <article class="service"><div class="service-img"><img src="images/design-sketch.png" alt="Architectural design sketch"></div><h3>Design</h3><ul><li>Architectural Services</li><li>Creative solutions designed around your goals, users, and budget</li></ul></article>
+    <article class="service"><div class="service-img"><img src="images/advisory-sketch.png" alt="Architectural advisory sketch"></div><h3>Advisory</h3><ul><li>Program Management</li><li>Design Review (IBC, LSC, FGI, CMS, &amp; DCH)</li><li>Life Safety Compliance Reviews</li></ul></article>
+  </div>
+</section>
 
-<section class="approach" id="approach"><div class="container">
-<div class="approach-head"><div><div class="eyebrow">Our Approach</div><h2>Clarity at every step. Direction at every decision.</h2><div class="accent"></div></div>
-<div class="approach-steps">
-<div class="step"><img src="images/approach-vision.svg" alt=""><h3>VISION</h3><p>Understand the big picture.</p></div><div class="arrow"></div>
-<div class="step"><img src="images/approach-strategy.svg" alt=""><h3>STRATEGY</h3><p>Develop the right plan and approach.</p></div><div class="arrow"></div>
-<div class="step"><img src="images/approach-direction.svg" alt=""><h3>DIRECTION</h3><p>Deliver solutions that bring your vision to life.</p></div>
-</div></div></div></section>
+<section class="approach" id="approach">
+  <div class="approach-grid">
+    <div class="approach-intro"><div class="eyebrow">Our Approach</div><h2>Clarity at every step.<br>Direction at every decision.</h2><div class="accent"></div></div>
+    <div class="steps">
+      <div class="step"><img src="images/approach-vision.png" alt="Vision planning diagram"><h3>Vision</h3><p>Understand the big picture.</p></div>
+      <div class="arrow">→</div>
+      <div class="step"><img src="images/approach-strategy.png" alt="Strategy planning diagram"><h3>Strategy</h3><p>Develop the right plan and approach.</p></div>
+      <div class="arrow">→</div>
+      <div class="step"><img src="images/approach-direction.png" alt="Direction architectural concept"><h3>Direction</h3><p>Deliver solutions that bring your vision to life.</p></div>
+    </div>
+  </div>
+</section>
 
-<section class="health" id="healthcare"><div class="container health-grid">
-<div><div class="eyebrow">Healthcare Expertise</div><h2>Experience where complexity matters.</h2><div class="accent"></div><p>Healthcare is a core area of expertise, not the limit of what we do. Our experience includes the operational, regulatory, technical, and human complexities that shape successful healthcare environments.</p><p>Representative areas of experience include hospital expansion, imaging and diagnostic services, ground-up facilities, specialized clinical environments, programming and feasibility, and code and life safety review.</p><p class="disclaimer">Sketch studies are conceptual illustrations of the service lines and expertise described here.</p></div>
-<div class="health-cards">
-<article class="health-card"><img src="images/hospital-expansion.svg" alt="Representative hospital expansion experience"><h3>HOSPITAL EXPANSION</h3><p>Supporting additions and vertical expansions that maintain operations and integrate new spaces.</p></article>
-<article class="health-card"><img src="images/imaging-diagnostics.svg" alt="Representative imaging services experience"><h3>IMAGING &amp; DIAGNOSTIC SERVICES</h3><p>Planning for imaging, interventional, and diagnostic environments with a focus on workflow and technology.</p></article>
-<article class="health-card"><img src="images/ground-up-facilities.svg" alt="Representative ground-up healthcare facility experience"><h3>GROUND-UP FACILITIES</h3><p>Supporting new facilities from early planning and programming through design and delivery.</p></article>
-<article class="health-card"><img src="images/specialized-clinical.svg" alt="Representative specialized clinical environment experience"><h3>SPECIALIZED CLINICAL ENVIRONMENTS</h3><p>Operating rooms, labor and delivery, ICUs, pharmacies, and other high-acuity spaces.</p></article>
-<article class="health-card"><img src="images/programming-feasibility.svg" alt="Representative programming and feasibility experience"><h3>PROGRAMMING &amp; FEASIBILITY</h3><p>Assessing needs, defining programs, evaluating opportunities, and developing the case for smart decisions.</p></article>
-<article class="health-card"><img src="images/life-safety.svg" alt="Representative code and life safety review experience"><h3>CODE &amp; LIFE SAFETY</h3><p>Reviews and analysis for IBC, LSC, FGI, CMS, and Georgia DCH requirements.</p></article>
-</div></div></section>
+<section class="health" id="healthcare">
+  <div class="health-grid">
+    <div class="health-intro"><div class="eyebrow">Healthcare Expertise</div><h2>Experience where complexity matters.</h2><div class="accent"></div><p>Healthcare is a core area of expertise. Below are representative environments and services where deep knowledge and practical solutions matter.</p><p class="small">Images shown are representative conceptual imagery and are not projects of Unparalleled Architecture.</p></div>
+    <div class="health-cards">
+      <article class="health-card"><img src="images/hospital-expansion.png" alt="Hospital expansion architectural sketch"><h3>Hospital Expansion</h3><p>Additions and vertical expansions that maintain operations and integrate new spaces.</p></article>
+      <article class="health-card"><img src="images/imaging-diagnostics.png" alt="Imaging and diagnostic architectural sketch"><h3>Imaging &amp; Diagnostic Services</h3><p>Planning for imaging, interventional, and diagnostic environments with a focus on workflow, technology, and compliance.</p></article>
+      <article class="health-card"><img src="images/ground-up-facilities.png" alt="Ground-up healthcare facility sketch"><h3>Ground-Up Facilities</h3><p>Supporting new healthcare facilities from early planning and programming through design and delivery.</p></article>
+      <article class="health-card"><img src="images/specialized-clinical.png" alt="Specialized clinical environment sketch"><h3>Specialized Clinical Environments</h3><p>Operating rooms, labor &amp; delivery, ICUs, pharmacies, and other high-acuity spaces.</p></article>
+      <article class="health-card"><img src="images/programming-feasibility.png" alt="Programming and feasibility plan sketch"><h3>Programming &amp; Feasibility</h3><p>Assessing needs, defining programs, evaluating opportunities, and building the case for smart decisions.</p></article>
+      <article class="health-card"><img src="images/life-safety.png" alt="Code and life safety plan sketch"><h3>Code &amp; Life Safety</h3><p>Reviews and analysis for IBC, LSC, FGI, CMS, and Georgia DCH requirements.</p></article>
+    </div>
+  </div>
+</section>
 
-<section class="credentials" id="experience"><div class="container"><div class="cred-grid">
-<div class="cred-col"><div class="eyebrow">Experience &amp; Credentials</div><h2>Over 20 years of experience. Focused on what matters.</h2><div class="accent"></div><p>With more than 20 years of experience spanning planning, architectural design, and project management, Unparalleled Architecture brings a practical understanding of how to navigate complex projects in critical environments.</p><p>Matt Nicholson leads the firm and holds architectural licenses in Georgia and California, with Board Certification through the American College of Healthcare Architects (ACHA).</p><p>Experience working for both small and large firms has provided hands-on project experience alongside an understanding of larger-firm processes and standards.</p><p>Unparalleled Architecture is ready to tackle complex projects from planning through construction.</p></div>
-<div class="cred-col"><div class="eyebrow">What Clients Are Saying</div><h2>Trust is part of the work.</h2><div class="accent"></div>
-<div class="quote"><p>“He is a trusted advisor who consistently places the best interests of his clients first.”</p><span>— Sepi Browning</span></div>
-<div class="quote"><p>“Matthew remained composed and resourceful in finding solutions that ensured the project's success while maintaining the design integrity.”</p><span>— Laurie Hansen</span></div>
-<div class="quote"><p>“His effective communication skills and ability to mediate differing viewpoints contribute significantly to the successful outcomes of projects.”</p><span>— Anindita Mukherjee</span></div>
-<p class="disclaimer">Quotes from client recommendations. Names are shown without former titles.</p></div>
-<div class="cred-col about-copy"><div class="eyebrow">About Unparalleled Architecture</div><h2>Built on partnership. Driven by purpose.</h2><div class="accent"></div><p>We believe the best solutions begin with understanding people, goals, and constraints.</p><p>Our role is to listen, ask the right questions, and bring clarity to complex decisions.</p><p>We are not interested in cookie-cutter solutions. Every problem deserves a unique and distinct solution.</p><p>We are your partner—bringing expertise, creativity, and practical solutions to life.</p></div>
-</div></div></section>
+<div class="lower">
+<section>
+  <div class="eyebrow">Experience &amp; Credentials</div><h2>Over 20 years of experience.<br>Focused on what matters.</h2><div class="accent"></div>
+  <p>With more than 20 years of experience spanning planning, architectural design, and project management, Unparalleled Architecture brings a practical understanding of how to navigate complex projects in critical environments.</p>
+  <p>Matt Nicholson leads the firm and holds architectural licenses in Georgia and California, and is a Board Certified Healthcare Architect (ACHA).</p>
+  <p>Experience working with both small and large firms has provided the perspective to combine hands-on project experience with the processes, standards, and resources of larger practices.</p>
+  <p>Unparalleled Architecture is ready to tackle your complex projects from planning through construction.</p>
+  <div class="credential-box"><strong>ACHA</strong><span>BOARD CERTIFIED<br>HEALTHCARE ARCHITECT<br><br>A peer-reviewed credential held by approximately 550 professionals across the U.S. and Canada.</span></div>
+</section>
+
+<section>
+  <div class="eyebrow">What Clients Are Saying</div>
+  <div class="quote"><p>He is a trusted advisor who consistently places the best interests of his clients first.</p><cite>— Sepi Browning</cite></div>
+  <div class="quote"><p>Matthew remained composed and resourceful in finding solutions that ensured the project's success while maintaining the design integrity.</p><cite>— Laurie Hansen</cite></div>
+  <div class="quote"><p>His effective communication skills and ability to mediate differing viewpoints contribute significantly to the successful outcomes of projects.</p><cite>— Anindita Mukherjee</cite></div>
+  <p class="quote-note">Quotes from clients and project partners. Names available upon request.</p>
+</section>
+
+<section class="about-panel" id="about">
+  <div class="copy"><div class="eyebrow">About Unparalleled Architecture</div><h2>Built on partnership.<br>Driven by purpose.</h2><div class="accent"></div>
+  <p>We believe the best solutions begin with understanding people, goals, and constraints.</p>
+  <p>Our role is to listen, ask the right questions, and bring clarity to complex decisions.</p>
+  <p>We are not interested in cookie cutter solutions. Every problem deserves a unique and distinct solution.</p>
+  <p>We are your partner—bringing expertise, creativity, and practical solutions to life.</p></div>
+  <img class="about-art" src="images/about-bg.png" alt="Architectural interior sketch">
+</section>
+</div>
 
 <section class="contact" id="contact">
-<div class="container contact-inner">
-  <div>
-    <div class="eyebrow">Let's Start the Conversation</div>
-    <h2>Have a project in mind?</h2>
-  </div>
-  <div class="contact-actions">
+  <div class="container contact-inner">
+    <div class="mail-icon" aria-hidden="true"></div>
+    <div><div class="contact-title">Have a project in mind?</div><div class="contact-sub">Let's start the conversation.</div></div>
+    <div class="divider"></div>
     <a class="email" href="mailto:info@unparalleledarchitecture.com">info@unparalleledarchitecture.com</a>
     <div class="calendar-booking">
       <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
@@ -94,8 +148,9 @@ header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);border-
       </script>
     </div>
   </div>
-</div>
 </section>
 </main>
-<footer><div class="container footer-inner"><span>© 2026 Unparalleled Architecture</span><span>Vision. Strategy. Direction.</span></div></footer>
-</body></html>
+
+<footer><div class="container footer"><span>© 2026 Unparalleled Architecture</span><span>Vision. Strategy. Direction.</span></div></footer>
+</body>
+</html>
