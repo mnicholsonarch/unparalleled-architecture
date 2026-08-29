@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600">
+<rect width="1100" height="600" fill="#fafaf7"/>
+<g fill="none" stroke="#163b5e" stroke-width="2" opacity=".78">
+<path d="M90 480 390 190 920 330 610 515Z"/>
+<path d="M390 190V80l300 80v150M690 160l230 170M390 280l530 140M390 350l530 140"/>
+<path d="M470 210v220M560 235v220M650 260v220M760 285v150"/>
+<path d="M120 470 390 235M205 500 470 260M300 510 555 290M405 520 645 315"/>
+</g>
+<g fill="none" stroke="#2e78b3" stroke-width="3" opacity=".75">
+<path d="M65 500C250 425 360 520 525 445S850 425 1015 315"/>
+<path d="M70 120C260 220 340 55 515 115S800 100 1030 185"/>
+<path d="M805 80l48-28-17 52M900 135l48-28-17 52M845 190l48-28-17 52"/>
+</g>
+<g font-family="Arial" font-size="22" fill="#163b5e" letter-spacing="3">
+<text x="810" y="62">VISION</text><text x="900" y="117">STRATEGY</text><text x="840" y="173">DIRECTION</text>
+</g></svg>
